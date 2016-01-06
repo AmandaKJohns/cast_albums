@@ -1,5 +1,7 @@
-<% @albums.each do | album | %>
-  <div>
-    <%= image_tag(album['images'][0]['url'], alt: 'cast album', class: 'album_cover') %>
-  </div>
-<% end %>
+<div class='flex-container'>
+  <% @albums.each do | album | %>
+    <div class='flex-item' data-album-id= <%= album['id'] %> >
+      <%= image_tag(album['images'][0]['url'], alt: 'cast album', class: 'album_cover') %>
+    </div>
+  <% end %>
+</div>
