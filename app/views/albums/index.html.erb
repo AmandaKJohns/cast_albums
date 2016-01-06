@@ -1,1 +1,5 @@
-Hello!
+<% @albums.each do | album | %>
+  <div class='album_cover'>
+    <%= image_tag(album['images'][0]['url'], alt: 'cast album') %>
+  </div>
+<% end %>
