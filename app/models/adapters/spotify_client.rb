@@ -6,7 +6,7 @@ module Adapters
     end
 
     def find_cast_albums
-      url = 'https://api.spotify.com/v1/search?q=broadway%20cast&type=artist'
+      url = 'https://api.spotify.com/v1/search?q=broadway%20cast&type=album'
       connection.query(url)
     end
 
